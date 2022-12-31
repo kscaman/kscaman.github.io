@@ -24,8 +24,11 @@ function buildPublicationsHTML(publications) {
   for (const publication of publications) {
     html += `
       <li>
-        <span class="date-one">${publication.Year}</span>
-        <p>${publication.Title}. <i>${publication.Authors}</i>. <span class="place">${publication.Publication}</span>, `;
+        <span class="date-one">${publication.Year||''}</span>
+        <p>${publication.Title}. <i>${publication.Authors.split(";").filter(s => s != '').join(", ")}</i>. `;
+    if (publication.Publication != null) {
+      html += `<span class="place">${publication.Publication}</span>, `;
+    }
     if (publication.Volume != null) {
       html += `${publication.Volume}, `;
     }
@@ -61,7 +64,7 @@ window.onload = function() {
     // Handle any errors that might occur
     console.error(error);
 	csvString = `Authors,Title,Publication,Volume,Number,Pages,Year,Publisher
-John Smith,Paper 1,Journal of Science,10,1,100-200,2010,Science Inc.
+John Smith;Afe da; adz;,Paper 1,Journal of Science,10,1,100-200,2010,Science Inc.
 Jane Doe,Paper 2,Journal of Science,10,2,201-300,2011,Science Inc.
 John Smith,Paper 3,Journal of Technology,,,,2012,`;
     const publications = parseCSV(csvString);
