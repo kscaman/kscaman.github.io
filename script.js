@@ -13,7 +13,7 @@ function parseCSV(csvString) {
 
 function sortPublications(publications) {
   return publications.sort((a, b) => {
-    return b.Year - a.Year;
+    return b.Year == a.Year ? 1- 2 * (a.Publication < b.Publication) : b.Year - a.Year;
   });
 }
 
@@ -59,9 +59,10 @@ window.onload = function() {
     // Handle any errors that might occur
     console.error(error);
 	csvString = `Authors,Title,Publication,Volume,Number,Pages,Year,Publisher
-John Smith;Afe da; adz;,Paper 1,Journal of Science,10,1,100-200,2010,Science Inc.
+John Smith;Afe da; adz;,Paper 1,Journal of Science,10,1,100-200,2012,Science Inc.
 Jane Doe,Paper 2,Journal of Science,10,2,201-300,,Science Inc.
-John Smith,Paper 3,Journal of Technology,,,,2012,`;
+John Smith,Paper 3,Journal of Technology,,,,2012,
+John Smith,Paper 5,AJournal of Technology,,,,2012,`;
     const publications = parseCSV(csvString);
     const sortedPublications = sortPublications(publications);
     const publicationsHTML = buildPublicationsHTML(sortedPublications);
