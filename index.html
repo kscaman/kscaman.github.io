@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Kevin Scaman - Personal Website</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400&family=Poppins:wght@600&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.1.0/papaparse.min.js"></script>
+  <script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+  <header>
+    <!--<div class="profile-photo">
+      <img src="photo.jpg" alt="Profile photo">
+    </div>-->
+    <div class="container">
+      <h1>Kevin Scaman</h1>
+      <h2>Researcher @ INRIA and ENS, Paris</h2>
+    </div>
+  </header>
+  <nav>
+    <div class="container">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#teaching">Teaching</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <main>
+    <section id="about">
+      <div class="container">
+		<div class="section-column">
+          <img src="avatar.png" alt="Profile photo">
+        </div>
+		<div class="section-column">
+          <p>I am a researcher at <strong>INRIA Paris</strong> in the <strong>Dyogene team</strong> and part-time professor at <strong>Ecole Polytechnique</strong>. My research lies at the intersection of <strong>Machine Learning</strong>, <strong>optimization</strong> and <strong>graph theory</strong>. Prior to that, I was a research scientist in Huawei’s Machine Learning lab in Paris leading the optimization for ML project-team. I did a post-doc in distributed optimization at the Microsoft Research – Inria Joint Center, and obtained my PhD in Applied Mathematics from the Ecole Normale Supérieure Paris-Saclay under the supervision of Nicolas Vayatis. In 2018, I received a best paper award of the 2018 NeurIPS conference for my work on distributed optimization.</p>
+		  <div class="buttons">
+			<a href="cv.pdf" target="_blank" rel="noopener noreferrer"><img src="cv.png" alt="CV"></a>
+			<a href="#contact" target="_blank" rel="noopener noreferrer"><img src="email.png" alt="contact"></a>
+			<a href="https://linkedin.com/in/kevin-scaman-22691949" target="_blank" rel="noopener noreferrer"><img src="linkedin.png" alt="LinkedIn"></a>
+			<a href="https://scholar.google.fr/citations?user=uiR63a8AAAAJ" target="_blank" rel="noopener noreferrer"><img src="google-scholar.png" alt="Google Scholar"></a>
+			<a href="https://twitter.com/kevinscaman" target="_blank" rel="noopener noreferrer"><img src="twitter.png" alt="Twitter"></a>
+		  </div>
+		</div>
+      </div>
+    </section>
+	<section id="education-experience-awards">
+	  <div class="container">
+		<div class="section-column">
+		  <section id="education">
+			<h3>Education</h3>
+			<ul>
+				<li><span class="date">2013 - 2016</span><p>PhD in Machine Learning<br><span class="place">Ecole Normale Supérieure Paris-Saclay</span></p></li>
+				<li><span class="date">2011 - 2012</span><p>Msc in Machine Learning (MVA)<br><span class="place">Ecole Polytechnique</span></p></li>
+				<li><span class="date">2008 - 2011</span><p>Eng. deg in Applied Mathematics<br><span class="place">Ecole Polytechnique</span></p></li>
+			</ul>
+		  </section>
+		</div>
+		<div class="section-column">
+		  <section id="experience">
+			<h3>Experience</h3>
+			<ul>
+				<li><span class="date">2022 - now</span><p>Part-time Professor<br><span class="place">Ecole Polytechnique, Saclay</span></p></li>
+				<li><span class="date">2021 - now</span><p>Researcher<br><span class="place">INRIA and ENS, Paris</span></p></li>
+				<li><span class="date">2018 - 2021</span><p>Principal researcher<br><span class="place">Huawei Noah's Ark, Paris</span></p></li>
+				<li><span class="date">2017 - 2018</span><p>Post-doctoral researcher<br><span class="place">Microsoft-INRIA joint center, Saclay</span></p></li>
+			</ul>
+		  </section>
+		</div>
+		<div class="section-column">
+		  <section id="awards">
+			<h3>Awards</h3>
+			<ul>
+				<li><span class="date-one">2018</span><p>Best paper award (4 out of 4865 submissions)<br><span class="place">NeurIPS 2018, Montréal</span></p></li>
+				<li><span class="date-one">2020</span><p>Individual gold medal award<br><span class="place">Huawei, Paris</span></p></li>
+				<li><span class="date-one">2019</span><p>Outstanding contributions individual award<br><span class="place">Huawei, Paris</span></p></li>
+				<li><span class="date-one">2018</span><p>Future star award<br><span class="place">Huawei, Paris</span></p></li>
+			</ul>
+		  </section>
+		</div>
+	  </div>
+	</section>
+
+    <section id="research">
+      <div class="container">
+        <h2>Research</h2>
+        <p>My field of study is at the interaction of <strong>Machine Learning</strong>, <strong>structured data analysis</strong> (graphs, time series) and <strong>optimization</strong>. A common theme of my research consists in analyzing the <strong>impact of structure in data</strong> (spatial proximity, time dependency or item correlations) and using it for ML purposes (training large-scale machine learning models, improving low-dimensional representations of graphs, identifying patterns from malware traces, or predicting the outcome of information cascades).</p>
+      </div>
+    </section>
+    <section id="teaching">
+      <div class="container">
+        <h2>Teaching</h2>
+        <ul>
+          <li><span class="date">2022-2023</span><p>Machine Learning 2<br><span class="place">Master X-HEC, Ecole Polytechnique, Saclay</span></p></li>
+          <li><span class="date">2022-2023</span><p>Capstone projects<br><span class="place">M2 Data Science, Ecole Polytechnique, Saclay</span></p></li>
+          <li><span class="date">2022-2023</span><p>Mathematics of Deep Learning<br><span class="place">M2 MASH, PSL, Paris</span></p></li>
+          <li><span class="date">2022-2023</span><p>Deep Learning<br><span class="place">ENS, Paris</span></p></li>
+          <li><span class="date">2021-2022</span><p>Deep Learning (mathematics track)<br><span class="place">ENS, Paris</span></p></li>
+          <li><span class="date">2021-2022</span><p>Structures et Algorithmes Aléatoires (TDs)<br><span class="place">ENS, Paris</span></p></li>
+        </ul>
+      </div>
+    </section>
+    <section id="publications">
+      <div class="container">
+        <h2>Publications</h2>
+		<p>My publications are also listed on <a href="https://scholar.google.fr/citations?user=uiR63a8AAAAJ" target="_blank" rel="noopener noreferrer">Google Scholar</a> and <a href="https://dblp.org/pid/149/2625.html" target="_blank" rel="noopener noreferrer">DBLP</a>.</p>
+        <ul id="publication-list">
+          <!-- Add your publications here -->
+        </ul>
+      </div>
+    </section>
+    <section id="contact">
+      <div class="container">
+        <h2>Contact</h2>
+        <p>Email: kevin.scaman@inria.fr</p>
+        <p>Office: INRIA Paris, 2 rue Simone IFF, 75012 Paris</p>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="container">
+      <p>2023 Copyright - Kevin Scaman</p>
+    </div>
+  </footer>
+</body>
+</html>
