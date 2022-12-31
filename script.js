@@ -24,18 +24,18 @@ function buildPublicationsHTML(publications) {
   for (const publication of publications) {
     html += `
       <li>
-        <span class="date">${publication.Year}</span>
-        <p>${publication.Title}.${publication.Authors}.<span class="place">${publication.Publication}</span>, `;
-    if (!publication.Volume == null) {
+        <span class="date-one">${publication.Year}</span>
+        <p>${publication.Title}. <i>${publication.Authors}</i>. <span class="place">${publication.Publication}</span>, `;
+    if (publication.Volume != null) {
       html += `${publication.Volume}, `;
     }
-    if (!publication.Number == null) {
+    if (publication.Number != null) {
       html += `${publication.Number}, `;
     }
-    if (!publication.Pages == null) {
+    if (publication.Pages != null) {
       html += `${publication.Pages}, `;
     }
-    html += `, ${publication.Year}</p>
+    html += `${publication.Year}.</p>
       </li>
     `;
   }
@@ -60,5 +60,13 @@ window.onload = function() {
     .catch(error => {
     // Handle any errors that might occur
     console.error(error);
+	csvString = `Authors,Title,Publication,Volume,Number,Pages,Year,Publisher
+John Smith,Paper 1,Journal of Science,10,1,100-200,2010,Science Inc.
+Jane Doe,Paper 2,Journal of Science,10,2,201-300,2011,Science Inc.
+John Smith,Paper 3,Journal of Technology,,,,2012,`;
+    const publications = parseCSV(csvString);
+    const sortedPublications = sortPublications(publications);
+    const publicationsHTML = buildPublicationsHTML(sortedPublications);
+    document.getElementById('publication-list').innerHTML = publicationsHTML;
     });
 };
