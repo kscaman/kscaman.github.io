@@ -23,12 +23,19 @@ function buildPublicationsHTML(publications) {
   let html = '';
   for (const publication of publications) {
     html += `
-      <li class="publication">
-        <span class="publication-title">${publication.Title}</span>
-        <span class="publication-authors">${publication.Authors}</span>
-        <span class="publication-details">
-          ${publication.Publication}, ${publication.Volume}(${publication.Number}), ${publication.Pages}, ${publication.Year}
-        </span>
+      <li>
+        <span class="date">${publication.Year}</span>
+        <p>${publication.Title}.${publication.Authors}.<span class="place">${publication.Publication}</span>, `;
+    if (!publication.Volume == null) {
+      html += `${publication.Volume}, `;
+    }
+    if (!publication.Number == null) {
+      html += `${publication.Number}, `;
+    }
+    if (!publication.Pages == null) {
+      html += `${publication.Pages}, `;
+    }
+    html += `, ${publication.Year}</p>
       </li>
     `;
   }
