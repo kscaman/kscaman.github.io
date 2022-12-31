@@ -22,23 +22,18 @@ function sortPublications(publications) {
 function buildPublicationsHTML(publications) {
   let html = '';
   for (const publication of publications) {
+	const authors = publication.Authors
+						.replace(/\s+/g, '')
+						.split(";")
+						.filter(s => s != '')
+						.map(s => s.split(',').reverse().join(' '))
+						.join(", ");
     html += `
       <li>
         <span class="date-one">${publication.Year||''}</span>
-        <p>${publication.Title}. <i>${publication.Authors.split(";").filter(s => s != '').join(", ")}</i>. `;
-    if (publication.Publication != null) {
-      html += `<span class="place">${publication.Publication}</span>, `;
-    }
-    if (publication.Volume != null) {
-      html += `${publication.Volume}, `;
-    }
-    if (publication.Number != null) {
-      html += `${publication.Number}, `;
-    }
-    if (publication.Pages != null) {
-      html += `${publication.Pages}, `;
-    }
-    html += `${publication.Year}.</p>
+        <p>${publication.Title}. <i>${authors}</i>.<br>`;
+	const otherInformation = [publication.Publication ? `<span class="place">${publication.Publication}</span>` : null, publication.Volume, publication.Number, publication.Pages, publication.Year];
+	html += otherInformation.filter(s => s != null).join(', ') + `.</p>
       </li>
     `;
   }
