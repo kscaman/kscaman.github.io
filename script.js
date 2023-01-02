@@ -11,9 +11,9 @@ function parseCSV(csvString) {
 
 // Next, you can use the array.sort() method to sort the array of publications by year.
 
-function sortPublications(publications) {
-  return publications.sort((a, b) => {
-    return b.Year == a.Year ? 1- 2 * (a.Publication < b.Publication) : b.Year - a.Year;
+function sortItems(list, key1, key2) {
+  return list.sort((a, b) => {
+    return b[key1] == a[key1] ? 1 - 2 * (a[key2] < b[key2]) : 1 - 2 * (b[key1] < a[key1]);
   });
 }
 
@@ -40,32 +40,37 @@ function buildPublicationsHTML(publications) {
   return html;
 }
 
-window.onload = function() {
+function buildStudentsHTML(students) {
+  let html = '';
+  for (const student of students) {
+    html += `
+      <li>
+        <span class="date">${student.year||''}</span>
+        <p>${student.name}. <i>${student.title}</i>.<br><span class="place">${student.place}</span>
+      </li>
+    `;
+  }
+  return html;
+}
 
-  // URL of the CSV file
-  const csvUrl = 'publications.csv';
-
+function createList(csvUrl, builderHTML, listId, key1, key2) {
   // Load the CSV file using the fetch function
   fetch(csvUrl)
     .then(response => response.text())
     .then(csvString => {
     // Parse the CSV string into an array of objects
-      const publications = parseCSV(csvString);
-      const sortedPublications = sortPublications(publications);
-      const publicationsHTML = buildPublicationsHTML(sortedPublications);
-      document.getElementById('publication-list').innerHTML = publicationsHTML;
+      const list = parseCSV(csvString);
+      const sortedItems = sortItems(list, key1, key2);
+      const listHTML = builderHTML(sortedItems);
+      document.getElementById(listId).innerHTML = listHTML;
     })
     .catch(error => {
-    // Handle any errors that might occur
-    console.error(error);
-	csvString = `Authors,Title,Publication,Volume,Number,Pages,Year,Publisher
-John Smith;Afe da; adz;,Paper 1,Journal of Science,10,1,100-200,2012,Science Inc.
-Jane Doe,Paper 2,Journal of Science,10,2,201-300,,Science Inc.
-John Smith,Paper 3,Journal of Technology,,,,2012,
-John Smith,Paper 5,AJournal of Technology,,,,2012,`;
-    const publications = parseCSV(csvString);
-    const sortedPublications = sortPublications(publications);
-    const publicationsHTML = buildPublicationsHTML(sortedPublications);
-    document.getElementById('publication-list').innerHTML = publicationsHTML;
+      // Handle any errors that might occur
+      console.error(error);
     });
+}
+
+window.onload = function() {
+  createList("publications.csv", buildPublicationsHTML, "publication-list", "Year", "Publications");
+  createList("students.csv", buildStudentsHTML, "student-list", "year", "name");
 };
