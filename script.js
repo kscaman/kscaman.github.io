@@ -45,8 +45,8 @@ function buildStudentsHTML(students) {
   for (const student of students) {
     html += `
       <li>
-        <span class="date">${student.year||''}</span>
-        <p>${student.name} ({student.position}). <i>${student.title}</i>.<br><span class="place">${student.place}</span>
+        <span class="date">${student.year}</span>
+        <p>${student.name} (${student.position}). <i>${student.title}</i>.<br><span class="place">${student.place}</span>
       </li>
     `;
   }
