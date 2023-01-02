@@ -71,6 +71,6 @@ function createList(csvUrl, builderHTML, listId, key1, key2) {
 }
 
 window.onload = function() {
-  createList("publications.csv", buildPublicationsHTML, "publication-list", "Year", "Publications");
+  createList("publications.csv", buildPublicationsHTML, "publication-list", "Year", "Publication");
   createList("students.csv", buildStudentsHTML, "student-list", "year", "name");
 };
