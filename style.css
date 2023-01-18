@@ -147,12 +147,17 @@ footer {
   flex-wrap: wrap;
 }
 
+#research-types > .container {
+  justify-content: center;
+}
+
 #about {
   text-align: justify;
 }
 
 #research-types .section-column {
   min-width: 270px;
+  max-width: 270px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -165,8 +170,13 @@ footer {
 }
 
 #research-types h3 {
-  margin-top: -43px;
+  margin-top: -35px;
+  font-size: 115%;
   color: var(--secondary-color);
+}
+
+.text-center {
+  text-align: center;
 }
 
 .section-column {
