@@ -46,7 +46,7 @@ function buildStudentsHTML(students) {
     html += `
       <li>
         <span class="date">${student.year}</span>
-        <p>${student.name} (${student.position}).<span class="place">${student.place}</span><br><i>${student.title}</i>.
+        <p>${student.name} (${student.position}). <span class="place">${student.place}</span><br><i>${student.title}</i>.
       </li>
     `;
   }
