@@ -2,11 +2,12 @@
 <html>
 <head>
   <title>Kevin Scaman - Personal Website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="style.css">
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400&family=Poppins:wght@600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&family=Source+Sans+3:wght@200;400;600&display=swap" rel="stylesheet">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.1.0/papaparse.min.js"></script>
   <script type="text/javascript" src="script.js"></script>
 </head>
@@ -17,12 +18,14 @@
     </div>-->
     <div class="container">
       <h1>Kevin Scaman</h1>
-      <h2>Researcher @ INRIA and ENS, Paris</h2>
+      <h2>Researcher in machine learning, optimization and graph theory, Inria and Ecole Normale Supérieure, Paris</h2>
     </div>
   </header>
   <nav>
     <div class="container">
-      <ul>
+    <label for="menu-toggle"><div href="" class="button"><img src="menu.png" alt="menu button"></div></label>
+    <input type="checkbox" id="menu-toggle"/>
+      <ul id="menu">
         <li><a href="">About</a></li>
         <li><a href="#research">Research</a></li>
         <li><a href="#teaching">Teaching</a></li>
@@ -35,16 +38,16 @@
     <section id="about">
       <div class="container">
 		<div class="section-column">
-          <img src="avatar.png" alt="Profile photo">
+          <img src="kscaman_mid.jpg" alt="Profile photo">
         </div>
 		<div class="section-column">
           <p>I am a researcher at <strong>INRIA Paris</strong> in the <strong>Dyogene team</strong> and part-time professor at <strong>Ecole Polytechnique</strong>. My research lies at the intersection of <strong>machine learning</strong>, <strong>optimization</strong> and <strong>graph theory</strong>. Prior to that, I was a research scientist in <strong>Huawei’s machine learning lab</strong> in Paris leading the optimization for ML project-team. I did a post-doc in distributed optimization at the <strong>Microsoft Research – Inria Joint Center</strong>, and obtained my PhD in Applied Mathematics from the <strong>Ecole Normale Supérieure Paris-Saclay</strong> under the supervision of Nicolas Vayatis. In 2018, I received a <strong>best paper award</strong> of the 2018 NeurIPS conference for my work on distributed optimization.</p>
 		  <div class="buttons">
-			<a href="cv.pdf" target="_blank" rel="noopener noreferrer"><img src="cv.png" alt="CV"></a>
-			<a href="#contact" target="_blank" rel="noopener noreferrer"><img src="email.png" alt="contact"></a>
-			<a href="https://linkedin.com/in/kevin-scaman-22691949" target="_blank" rel="noopener noreferrer"><img src="linkedin.png" alt="LinkedIn"></a>
-			<a href="https://scholar.google.fr/citations?user=uiR63a8AAAAJ" target="_blank" rel="noopener noreferrer"><img src="google-scholar.png" alt="Google Scholar"></a>
-			<a href="https://twitter.com/kevinscaman" target="_blank" rel="noopener noreferrer"><img src="twitter.png" alt="Twitter"></a>
+			<a class="button" href="cv.pdf" target="_blank" rel="noopener noreferrer"><img src="cv.png" alt="CV"></a>
+			<a class="button" href="#contact" target="_blank" rel="noopener noreferrer"><img src="email.png" alt="contact"></a>
+			<a class="button" href="https://linkedin.com/in/kevin-scaman-22691949" target="_blank" rel="noopener noreferrer"><img src="linkedin.png" alt="LinkedIn"></a>
+			<a class="button" href="https://scholar.google.fr/citations?user=uiR63a8AAAAJ" target="_blank" rel="noopener noreferrer"><img src="google-scholar.png" alt="Google Scholar"></a>
+			<a class="button" href="https://twitter.com/kevinscaman" target="_blank" rel="noopener noreferrer"><img src="twitter.png" alt="Twitter"></a>
 		  </div>
 		</div>
       </div>
@@ -92,7 +95,7 @@
         <p>My field of study is at the interaction of <strong>Machine Learning</strong>, <strong>structured data analysis</strong> (graphs, time series) and <strong>optimization</strong>. A common theme of my research consists in analyzing the <strong>impact of structure in data</strong> (spatial proximity, time dependency or item correlations) and using it for ML purposes (training large-scale machine learning models, improving low-dimensional representations of graphs, identifying patterns from malware traces, or predicting the outcome of information cascades).</p>
       </div>
     </section>
-    <section id="research-types">
+    <!--<section id="research-types">
 	  <div class="container">
 		<div class="section-column">
 		  <img src="orb_ml.png" alt="Machine learning">
@@ -108,7 +111,7 @@
 		</div>
 	  </div>
 	  <p class="text-center"><br><i>(images generated with Midjourney AI)</i></p>
-    </section>
+    </section>-->
     <section id="teaching">
       <div class="container">
         <h2>Teaching</h2>
@@ -150,7 +153,11 @@
   </main>
   <footer>
     <div class="container">
-      <p>2023 Copyright - Kevin Scaman</p>
+      <img src="inria.png" alt="Inria logo">
+      <img src="ENS_-_PSL.png" alt="ENS PSL logo">
+    </div>
+    <div class="container">
+      <p>Copyright © 2023 Kevin Scaman. All rights reserved.</p>
     </div>
   </footer>
 </body>
