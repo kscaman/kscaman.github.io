@@ -70,6 +70,17 @@ function createList(csvUrl, builderHTML, listId, key1, key2) {
     });
 }
 
+function changePhoto() {
+  const photo = document.getElementById("profile-photo");
+  console.log(photo.src.substring(photo.src.lastIndexOf('/')+1));
+  if (photo.src.substring(photo.src.lastIndexOf('/')+1) == "profile-photo.jpg"){
+    photo.src = "deepfake_sq.jpg";
+  } else {
+    photo.src = "profile-photo.jpg";
+  }
+  return false;
+}
+
 window.onload = function() {
   createList("publications.csv", buildPublicationsHTML, "publication-list", "Year", "Publication");
   createList("students.csv", buildStudentsHTML, "student-list", "year", "name");
