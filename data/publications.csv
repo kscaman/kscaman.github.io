@@ -1,0 +1,33 @@
+﻿Authors,Title,Publication,Volume,Number,Pages,Year,Publisher
+"Scaman, Kevin; Kalogeratos, Argyris; Vayatis, Nicolas; ",Dynamic treatment allocation for epidemic control in arbitrary networks,Diffusion Networks and Cascade Analytics workshop,,,,2014,
+"Lemonnier, Rémi; Scaman, Kevin; Vayatis, Nicolas; ",Tight bounds for influence in diffusion networks and application to bond percolation and epidemiology,Advances in Neural Information Processing Systems,27,,,2014,
+"Scaman, Kevin; Kalogeratos, Argyris; Vayatis, Nicolas; ",A greedy approach for dynamic control of diffusion processes in networks,2015 IEEE 27th International Conference on Tools with Artificial Intelligence (ICTAI),,,652-659,2015,IEEE
+"Kalogeratos, Argyris; Scaman, Kevin; Vayatis, Nicolas; ",Learning to suppress SIS epidemics in networks,Networks in the Social and Information Sciences workshop,,,,2015,
+"Scaman, Kevin; Lemonnier, Rémi; Vayatis, Nicolas; ",Anytime influence bounds and the explosive behavior of continuous-time diffusion networks,Advances in Neural Information Processing Systems,28,,,2015,
+"Lemonnier, Rémi; Scaman, Kevin; Kalogeratos, Argyris; ",Multivariate Hawkes processes for large-scale inference,Proceedings of the AAAI conference on artificial intelligence,31,1,,2017,
+"Lemonnier, Rémi; Scaman, Kevin; Vayatis, Nicolas; ",Spectral bounds in random graphs applied to spreading phenomena and percolation,Advances in Applied Probability,50,2,480-503,2018,Cambridge University Press
+"Scaman, Kevin; Kalogeratos, Argyris; Vayatis, Nicolas; ",Suppressing epidemics in networks using priority planning,IEEE Transactions on Network Science and Engineering,3,4,271-285,2016,IEEE
+"Scaman, Kevin; Bach, Francis; Bubeck, Sébastien; Lee, Yin Tat; Massoulié, Laurent; ",Optimal algorithms for smooth and strongly convex distributed optimization in networks,Proceedings of the 34th International Conference on Machine Learning-Volume 70,,,3027-3036,2017,JMLR. org
+"Scaman, Kevin; ",Analysis and control of diffusion processes in networks,PhD thesis,,,,2016,Université Paris Saclay (COmUE)
+"Scaman, Kevin; Kalogeratos, Argyris; Corinzia, Luca; Vayatis, Nicolas; ",A spectral method for activity shaping in continuous-time information cascades,arXiv preprint arXiv:1709.05231,,,,2017,
+"Virmaux, Aladin; Scaman, Kevin; ",Lipschitz regularity of deep neural networks: analysis and efficient estimation,Advances in Neural Information Processing Systems,31,,,2018,
+"Scaman, Kevin; Bach, Francis; Bubeck, Sébastien; Massoulié, Laurent; Lee, Yin Tat; ",Optimal algorithms for non-smooth distributed optimization in networks,Advances in Neural Information Processing Systems,31,,,2018,
+"Kalogeratos, Argyris; Scaman, Kevin; Corinzia, Luca; Vayatis, Nicolas; ",Partial network immunization in Continuous-Time Information Cascades,BOOK OF ABSTRACTS,113,,,2017,
+"Draief, Moez; Kutzkov, Konstantin; Scaman, Kevin; Vojnovic, Milan; ",KONG: Kernels for ordered-neighborhood graphs,Advances in Neural Information Processing Systems,31,,,2018,
+"Kalogeratos, Argyris; Scaman, Kevin; Corinzia, Luca; Vayatis, Nicolas; ",Information diffusion and rumor spreading,Cooperative and Graph Signal Processing,,,651-678,2018,Academic Press
+"Colin, Igor; Dos Santos, Ludovic; Scaman, Kevin; ",Theoretical limits of pipeline parallel optimization and application to distributed deep learning,Advances in Neural Information Processing Systems,32,,,2019,
+"Scaman, Kevin; Bach, Francis; Bubeck, Sébastien; Lee, Yin; Massoulié, Laurent; ",Optimal convergence rates for convex distributed optimization in networks,Journal of Machine Learning Research,20,,1-31,2019,
+"Dasoulas, George; Santos, Ludovic Dos; Scaman, Kevin; Virmaux, Aladin; ",Coloring graph neural networks for node disambiguation,International Joint Conference on Artificial Intelligence,,,,2020,
+"Scaman, Kevin; Dos Santos, Ludovic; Barlier, Merwan; Colin, Igor; ",A simple and efficient smoothing method for faster optimization and local exploration,Advances in Neural Information Processing Systems,33,,6503-6513,2020,
+"Scaman, Kevin; Malherbe, Cédric; ",Robustness analysis of non-convex stochastic gradient descent using biased expectations,Advances in Neural Information Processing Systems,33,,16377-16387,2020,
+"Ma, Avery; Virmaux, Aladin; Scaman, Kevin; Lu, Juwei; ",Improving Hierarchical Adversarial Robustness of Deep Neural Networks,arXiv preprint arXiv:2102.09012,,,,2021,
+"Dasoulas, George; Nikolentzos, Giannis; Scaman, Kevin; Virmaux, Aladin; Vazirgiannis, Michalis; ",Ego-based entropy measures for structural representations on graphs,"ICASSP 2021-2021 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)",,,3210-3214,2021,IEEE
+"Dasoulas, George; Scaman, Kevin; Virmaux, Aladin; ",Lipschitz normalization for self-attention layers with application to graph neural networks,International Conference on Machine Learning,,,2456-2466,2021,PMLR
+"Durmus, Alain; Moulines, Eric; Naumov, Alexey; Samsonov, Sergey; Scaman, Kevin; Wai, Hoi-To; ",Tight High Probability Bounds for Linear Stochastic Approximation with Fixed Stepsize,Advances in Neural Information Processing Systems,34,,30063-30074,2021,
+"Draief, Moez; Chen, Xiang; Kutzkov, Konstantin; Scaman, Kevin; Vojnovic, Milan; ",Apparatuses and methods for detecting malware,US Patent,,,,2022,"US Patent App. 17/538,703"
+"Malherbe, Cedric; Scaman, Kevin; ",Robustness in Multi-Objective Submodular Optimization: a Quantile Approach,International Conference on Machine Learning,,,14871-14886,2022,PMLR
+"Scaman, Kevin; Malherbe, Cedric; Dos Santos, Ludovic; ",Convergence rates of non-convex stochastic gradient descent under a generic lojasiewicz condition and local smoothness,International Conference on Machine Learning,,,19310-19327,2022,PMLR
+"Dasoulas, George; Dos Santos, Ludovic; Scaman, Kevin; Virmaux, Aladin; ",Node disambiguation,US Patent,,,,2022,"US Patent App. 17/702,064"
+"Robin, David AR; Scaman, Kevin; Lelarge, Marc; ",Periodic Signal Recovery with Regularized Sine Neural Networks,NeurIPS 2022 Workshop on Symmetry and Geometry in Neural Representations,,,,2022,
+"Even, Mathieu; Massoulié, Laurent; Scaman, Kevin; ",On Sample Optimality in Personalized Collaborative and Federated Learning,Advances in Neural Information Processing Systems,,,,2022,
+"Robin, David AR; Scaman, Kevin; Lelarge, Marc; ",Convergence beyond the over-parameterized regime using Rayleigh quotients,Advances in Neural Information Processing Systems,,,,2022,

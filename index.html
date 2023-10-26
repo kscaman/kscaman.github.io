@@ -3,18 +3,18 @@
 <head>
   <title>Kevin Scaman - Personal Website</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" type="text/css" href="static/style.css">
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&family=Source+Sans+3:wght@200;400;600&display=swap" rel="stylesheet">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.1.0/papaparse.min.js"></script>
-  <script type="text/javascript" src="script.js"></script>
+  <script type="text/javascript" src="static/script.js"></script>
 </head>
 <body>
   <header>
     <!--<div class="profile-photo">
-      <img src="photo.jpg" alt="Profile photo">
+      <img src="images/photo.jpg" alt="Profile photo">
     </div>-->
     <div class="container">
       <h1>Kevin Scaman</h1>
@@ -23,7 +23,7 @@
   </header>
   <nav>
     <div class="container">
-    <label for="menu-toggle"><div href="" class="button"><img src="menu.png" alt="menu button"></div></label>
+    <label for="menu-toggle"><div href="" class="button"><img src="images/menu.png" alt="menu button"></div></label>
     <input type="checkbox" id="menu-toggle"/>
       <ul id="menu">
         <li><a href="">About</a></li>
@@ -38,17 +38,17 @@
     <section id="about">
       <div class="container">
 		<div class="section-column">
-          <img id="profile-photo" src="profile-photo.jpg" onclick="changePhoto()" alt="Profile photo">
+          <img id="profile-photo" src="images/profile-photo.jpg" onclick="changePhoto()" alt="Profile photo">
           <!--<p class="caption">(This is a deep fake generated using <a href="https://www.midjourney.com/">Midjourney</a><br>and <a href="https://insightface.ai/">InsightFace</a>. For a real photo, click <a href="" onclick="return changePhoto();">here</a>)</p>-->
         </div>
 		<div class="section-column">
       <p>I am a research scientist at <strong><a href="https://www.inria.fr/fr/centre-inria-de-paris">INRIA Paris</a></strong> and the <strong><a href="https://www.di.ens.fr/">DI ENS</a></strong> (computer science department of Ecole Normale Supérieure de Paris) in the <strong><a href="https://www.di.ens.fr/dyogene/">Argo team</a></strong>, and a part-time associate professor (chargé de cours) at <strong><a href="https://www.polytechnique.edu/">Ecole Polytechnique</a></strong>. My research lies at the intersection of <strong>machine learning</strong>, <strong>optimization</strong> and <strong>graph theory</strong>. Prior to that, I was a research scientist in <strong><a href="http://dev3.noahlab.com.hk/">Huawei’s machine learning lab</a></strong> in Paris leading the optimization for ML project-team. I did a post-doc in distributed optimization at the <strong><a href="https://www.microsoft.com/en-us/research/collaboration/inria-joint-centre/">Microsoft Research – Inria Joint Center</a></strong>, and obtained my PhD in Applied Mathematics from the <strong><a href="https://ens-paris-saclay.fr/">Ecole Normale Supérieure Paris-Saclay</a></strong> under the supervision of Nicolas Vayatis. In 2018, I received a <strong>best paper award</strong> of the 2018 NeurIPS conference for my work on distributed optimization.</p>
 		  <div class="buttons">
-			<a class="button" href="cv.pdf" target="_blank" rel="noopener noreferrer"><img src="cv.png" alt="CV"></a>
-			<a class="button" href="#contact" target="_blank" rel="noopener noreferrer"><img src="email.png" alt="contact"></a>
-			<a class="button" href="https://linkedin.com/in/kevin-scaman-22691949" target="_blank" rel="noopener noreferrer"><img src="linkedin.png" alt="LinkedIn"></a>
-			<a class="button" href="https://scholar.google.fr/citations?user=uiR63a8AAAAJ" target="_blank" rel="noopener noreferrer"><img src="google-scholar.png" alt="Google Scholar"></a>
-			<a class="button" href="https://twitter.com/kevinscaman" target="_blank" rel="noopener noreferrer"><img src="twitter.png" alt="Twitter"></a>
+			<a class="button" href="data/cv.pdf" target="_blank" rel="noopener noreferrer"><img src="images/cv.png" alt="CV"></a>
+			<a class="button" href="#contact" target="_blank" rel="noopener noreferrer"><img src="images/email.png" alt="contact"></a>
+			<a class="button" href="https://linkedin.com/in/kevin-scaman-22691949" target="_blank" rel="noopener noreferrer"><img src="images/linkedin.png" alt="LinkedIn"></a>
+			<a class="button" href="https://scholar.google.fr/citations?user=uiR63a8AAAAJ" target="_blank" rel="noopener noreferrer"><img src="images/google-scholar.png" alt="Google Scholar"></a>
+			<a class="button" href="https://twitter.com/kevinscaman" target="_blank" rel="noopener noreferrer"><img src="images/twitter.png" alt="Twitter"></a>
 		  </div>
 		</div>
       </div>
@@ -99,15 +99,15 @@
     <!--<section id="research-types">
 	  <div class="container">
 		<div class="section-column">
-		  <img src="orb_ml.png" alt="Machine learning">
+		  <img src="images/orb_ml.png" alt="Machine learning">
 		  <h3>Machine learning</h3>
 		</div>
 		<div class="section-column">
-		  <img src="orb_optimization.png" alt="Optimization">
+		  <img src="images/orb_optimization.png" alt="Optimization">
 		  <h3>Optimization</h3>
 		</div>
 		<div class="section-column">
-		  <img src="orb_graphs.png" alt="Graphs">
+		  <img src="images/orb_graphs.png" alt="Graphs">
 		  <h3>Graphs and networks</h3>
 		</div>
 	  </div>
@@ -157,8 +157,8 @@
   </main>
   <footer>
     <div class="container">
-      <img src="inria.png" alt="Inria logo">
-      <img src="ENS_-_PSL.png" alt="ENS PSL logo">
+      <img src="images/inria.png" alt="Inria logo">
+      <img src="images/ENS_-_PSL.png" alt="ENS PSL logo">
     </div>
     <div class="container">
       <p>Copyright © 2023 Kevin Scaman. All rights reserved.</p>
