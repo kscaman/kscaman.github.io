@@ -72,7 +72,6 @@ function createList(csvUrl, builderHTML, listId, key1, key2) {
 
 function changePhoto() {
   const photo = document.getElementById("profile-photo");
-  console.log(photo.src.substring(photo.src.lastIndexOf('/')+1));
   if (photo.src.substring(photo.src.lastIndexOf('/')+1) == "profile-photo.jpg"){
     photo.src = "deepfake_sq.jpg";
   } else {
