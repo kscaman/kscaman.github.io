@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mathematics of Deep Learning - M2 MASH</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="../static/style.css">
+  <link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&family=Source+Sans+3:wght@200;400;600&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.1.0/papaparse.min.js"></script>
+  <script type="text/javascript" src="../static/script.js"></script>
+</head>
+<body>
+  <header>
+    <!--<div class="profile-photo">
+      <img src="images/photo.jpg" alt="Profile photo">
+    </div>-->
+    <div class="container">
+      <h1>Kevin Scaman</h1>
+      <h2>Researcher in machine learning, optimization and graph theory, Inria and Ecole Normale Supérieure, Paris</h2>
+    </div>
+  </header>
+  <nav>
+    <div class="container">
+    <label for="menu-toggle"><div href="" class="button"><img src="../images/menu.png" alt="menu button"></div></label>
+    <input type="checkbox" id="menu-toggle"/>
+      <ul id="menu">
+        <li><a href="../index.html">About</a></li>
+        <li><a href="../index.html#research">Research</a></li>
+        <li><a href="../index.html#teaching">Teaching</a></li>
+        <li><a href="../index.html#publications">Publications</a></li>
+        <li><a href="../index.html#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <main>
+    <section id="lessons">
+      <div class="container">
+        <h3>Project ideas for the deep learning course at Ensae</h3>
+        <p>You will find below a list of code repositories and ideas for your project:<br><br></p>
+        <ul>
+          <li><p><strong>Minimal GPT:</strong> Finetune and use a simple implementation of GPT to generate text [<a href="https://github.com/karpathy/nanoGPT">repo</a> or <a href="https://github.com/karpathy/minGPT">repo</a>]</p></li>
+          <li><p><strong>Minimal diffusion:</strong> Train and use a simple implementation of diffusion models to generate images [<a href="https://github.com/dataflowr/Project-tiny-diffusion">repo</a>]</p></li>
+          <li><p><strong>Diverse Weight Averaging for Out-of-Distribution Generalization:</strong> Improve out-of-distribution generalization of neural networks by a simple averaging method [<a href="https://github.com/dataflowr/Project-diwa">repo</a>]</p></li>
+          <li><p><strong>Neural Radiance Fields:</strong> Create 3d scenes using neural networks [<a href="https://github.com/dataflowr/Project-nerf-pytorch">repo</a>]</p></li>
+          <li><p><strong>Neural ODEs:</strong> Learn the dynamics of a physical system with a neural network [<a href="https://github.com/dataflowr/Project-augmented-neural-odes">repo</a>]</p></li>
+          <li><p><strong>Network compression:</strong> Use network pruning to reduce inference cost in low-resource settings (e.g. smartphones) [<a href="https://github.com/dataflowr/Project-rethinking-network-pruning?tab=readme-ov-file">repo</a>]</p></li>
+          <li><p><strong>Test-Time Adaptation:</strong> Make the model adapt to adversarial changes or attacks at inference [<a href="https://github.com/dataflowr/Project-Tent-Test-Time-Domain-Adaptation">repo</a>]</p></li>
+          <li><p><strong>Contrastive Language-Image Pre-Training:</strong> Use a joint image-text embedding to describe photos in plain text [<a href="https://github.com/dataflowr/Project-CLIP">repo</a>]</p></li>
+          <li><p><strong>Age Estimation:</strong> Use a neural network to guess the age of people on photos [<a href="https://github.com/dataflowr/Project-age-estimation-pytorch">repo</a>]</p></li>
+          <li><p><strong>Explainability of vision models:</strong> Use attention flow to help understand the model's decisions [<a href="https://github.com/dataflowr/Project-attention_flow">repo</a>]</p></li>
+          <li><p><strong>Out-of-Distribution Detector:</strong> Find out-of-distribution examples in training data to improve false positive rate [<a href="https://github.com/dataflowr/Project-odin-out-ouf-distribution-detection">repo</a>]</p></li>
+        </ul>
+        <h3>Instructions</h3>
+        <p>Please send an email to kevin.scaman@inria.fr with your topic and group for the final project (only one email per group). Please check that all these requirements are verified:</p>
+        <ul>
+          <li><p>1) Each group should have at most 4 students.</p></li>
+          <li><p>2) Projects need to start with one of the topics above. If you wish to work on another project, please provide a detailed description of the objectives of the project, a link to a codebase or scientific paper to start with, and send me an email at kevin.scaman@inria.fr to make sure that the project is feasible within the duration of the course.</p></li>
+          <li><p>3) The projects should start by running the existing repo, and do something new on top of it, such as testing on a different dataset, finetuning for another application, or trying a different architecture/optimization method for the same task (see examples and ideas in the topics' repositories).</p></li>
+        </ul>
+        <h3>A few tips</h3>
+        <ul>
+          <li><p>1) Deep learning often requires a lot of debugging, so don't start on the last week of the class.</p></li>
+          <li><p>2) State-of-the-art is often achieved with extensive hyper-parameter optimisation and heavy computation power, so no worries if your implementation doesn't match the latest results in the field!</p></li>
+          <li><p>3) Always compare your implementation with a naive baseline (e.g. a linear model or a simple rule based method) to check if DL has value for this specific problem.</p></li>
+        </ul>
+        <h3>Deadlines</h3>
+        <ul>
+          <li><p><strong>(01/03)</strong><strong> Team formation and topics:</strong> Send email (kevin.scaman@inria.fr) with team and topic (link to repo + short description)</p></li>
+          <li><p><strong>(29/03)</strong> <strong>Deliverables:</strong> Report (pdf, max 5 pages) + code (link to a colab file or git repo)</p></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="container">
+      <img src="../images/inria.png" alt="Inria logo">
+      <img src="../images/ENS_-_PSL.png" alt="ENS PSL logo">
+    </div>
+    <div class="container">
+      <p>Copyright © 2023 Kevin Scaman. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
